@@ -61,6 +61,8 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+void _tree_level(const binary_tree_t *tree, size_t level, void (*func)(int));
+size_t _tree_height(const binary_tree_t *tree);
 int binary_tree_is_complete(const binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
